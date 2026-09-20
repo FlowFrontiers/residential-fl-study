@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated paper."
+title: "Feature Suppression and Differential Privacy for Residential Traffic Classification: A Two-Home Federated Study"
+type: software
+authors:
+  - family-names: "Lipcsey-Magyar"
+    given-names: "Márton Pál"
+  - family-names: "Pekar"
+    given-names: "Adrian"
+repository-code: "https://github.com/FlowFrontiers/residential-fl-study"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Feature Suppression and Differential Privacy for Residential Traffic Classification: A Two-Home Federated Study"
+  authors:
+    - family-names: "Lipcsey-Magyar"
+      given-names: "Márton Pál"
+    - family-names: "Pekar"
+      given-names: "Adrian"
+  year: 2026

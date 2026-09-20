@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# LaTeX build artifacts
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.synctex.gz
+paper/*.fdb_latexmk
+paper/*.fls
+paper/sections/*.aux
+
+# IDE
+.vscode/
+.idea/
+
+# Experiment checkpoints and generated run outputs
+runs/
+*.pt
+*.tmp
+
+# Model checkpoints included in the versioned measurement artifact.
+!results/**/*.pt

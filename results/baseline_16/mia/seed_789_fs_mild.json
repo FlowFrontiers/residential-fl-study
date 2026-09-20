@@ -1,0 +1,230 @@
+{
+  "config": "fs_mild",
+  "seed": 789,
+  "identity": {
+    "target_spec": {
+      "schema": 1,
+      "config_name": "fs_mild",
+      "seed": 789,
+      "config": {
+        "num_rounds": 20,
+        "local_epochs": 5,
+        "batch_size": 256,
+        "lr": 0.001,
+        "test_ratio": 0.2,
+        "target_epsilon": 8.0,
+        "max_grad_norm": 1.0,
+        "fisher_threshold": 0.4,
+        "fisher_n_samples": 5000,
+        "lambda_reg": 0.05,
+        "equal_weight": false,
+        "hidden_dims": [
+          16,
+          16
+        ],
+        "device": "cpu",
+        "num_threads": 1,
+        "deterministic": true
+      },
+      "environment": {
+        "python": "3.11.14",
+        "platform": "Linux-6.8.0-40-generic-x86_64-with-glibc2.39",
+        "machine": "x86_64",
+        "torch": "2.10.0+cu128",
+        "numpy": "2.4.2",
+        "opacus": "1.5.4",
+        "sklearn": "1.8.0",
+        "cuda": "12.8",
+        "scipy": "1.17.1",
+        "pandas": "3.0.1",
+        "pyarrow": "23.0.1",
+        "device": "cpu",
+        "num_threads": 1,
+        "device_name": "x86_64"
+      },
+      "source_sha256": "a4dcb4db7051d9a52d4e0ffb35ee9a312ff2005075f045a826f7bb939c5bd0b0",
+      "data_sha256": {
+        "home_a": "e34b01a1ac786e8decda51336c81d8163ace4cf5fbe01deea5612b727f510bcb",
+        "home_b": "b46b21c1d6b7b34ffd2028bff174f130940e09e35dd1c84ede8cdc4574698a43"
+      },
+      "feature_cols": [
+        "bidirectional_duration_ms",
+        "bidirectional_packets",
+        "bidirectional_bytes",
+        "src2dst_packets",
+        "dst2src_packets",
+        "src2dst_bytes",
+        "dst2src_bytes",
+        "bidirectional_ps_min",
+        "bidirectional_ps_max",
+        "bidirectional_ps_mean",
+        "bidirectional_ps_stddev",
+        "protocol"
+      ],
+      "classes": [
+        "Collaborative",
+        "Media",
+        "Network",
+        "SocialNetwork",
+        "System",
+        "Web"
+      ],
+      "preprocessing": {
+        "name": "flow_log_units_v1",
+        "units": {
+          "bidirectional_duration_ms": 1000.0,
+          "bidirectional_packets": 1.0,
+          "bidirectional_bytes": 1024.0,
+          "src2dst_packets": 1.0,
+          "dst2src_packets": 1.0,
+          "src2dst_bytes": 1024.0,
+          "dst2src_bytes": 1024.0,
+          "bidirectional_ps_min": 1024.0,
+          "bidirectional_ps_max": 1024.0,
+          "bidirectional_ps_mean": 1024.0,
+          "bidirectional_ps_stddev": 1024.0,
+          "protocol": 255.0
+        }
+      },
+      "split": "stratified",
+      "split_hashes": {
+        "home_a": {
+          "train": "4458f10b78a246a69198218a35d1a7250c056dfe17593ed0b37baa2a13e69a1d",
+          "test": "ed4cb79b7efdad0fb774cfaab4f19f4364c6a94274b6e0092514483bcd901d9f"
+        },
+        "home_b": {
+          "train": "462fcf985c3bcccaa2573a51d4991540801c0e4295a67005e47dc11f619ff3f9",
+          "test": "100eaa0ca46fe34de3cb31c05863e251201ddb5df1067170f3d31324c825e819"
+        }
+      },
+      "weights": {
+        "home_a": 0.6167167084304577,
+        "home_b": 0.38328329156954233
+      },
+      "sizes": {
+        "home_a": {
+          "n_train": 797160,
+          "n_test": 199290
+        },
+        "home_b": {
+          "n_train": 495427,
+          "n_test": 123857
+        }
+      }
+    },
+    "checkpoint_sha256": "9c2541d12b95edf5914e12c2b51c7fa4867df802e17c1faf8d3ed2334eda6968",
+    "attack": "loss",
+    "n_cap": 2000
+  },
+  "home_a": {
+    "per_class": {
+      "Collaborative": {
+        "auc": 0.5046915000000001,
+        "tpr_at_1fpr": 0.0115,
+        "tpr_at_5fpr": 0.0555,
+        "advantage": 0.020000000000000018,
+        "n_samples": 2000
+      },
+      "Media": {
+        "auc": 0.50807775,
+        "tpr_at_1fpr": 0.009,
+        "tpr_at_5fpr": 0.044,
+        "advantage": 0.025500000000000023,
+        "n_samples": 2000
+      },
+      "Network": {
+        "auc": 0.5001915,
+        "tpr_at_1fpr": 0.0,
+        "tpr_at_5fpr": 0.0,
+        "advantage": 0.020499999999999963,
+        "n_samples": 2000
+      },
+      "SocialNetwork": {
+        "auc": 0.5087198749999999,
+        "tpr_at_1fpr": 0.009,
+        "tpr_at_5fpr": 0.0575,
+        "advantage": 0.039000000000000035,
+        "n_samples": 2000
+      },
+      "System": {
+        "auc": 0.4988959999999999,
+        "tpr_at_1fpr": 0.008,
+        "tpr_at_5fpr": 0.031,
+        "advantage": 0.013500000000000068,
+        "n_samples": 2000
+      },
+      "Web": {
+        "auc": 0.491448875,
+        "tpr_at_1fpr": 0.0085,
+        "tpr_at_5fpr": 0.0415,
+        "advantage": 0.01100000000000001,
+        "n_samples": 2000
+      }
+    },
+    "macro": {
+      "auc": 0.50200425,
+      "tpr_at_1fpr": 0.007666666666666666,
+      "tpr_at_5fpr": 0.03825,
+      "advantage": 0.021583333333333354
+    }
+  },
+  "home_b": {
+    "per_class": {
+      "Collaborative": {
+        "auc": 0.50150925,
+        "tpr_at_1fpr": 0.006,
+        "tpr_at_5fpr": 0.04,
+        "advantage": 0.04049999999999998,
+        "n_samples": 2000
+      },
+      "Media": {
+        "auc": 0.5106122974015951,
+        "tpr_at_1fpr": 0.005016722408026756,
+        "tpr_at_5fpr": 0.06856187290969899,
+        "advantage": 0.041806020066889715,
+        "n_samples": 598
+      },
+      "Network": {
+        "auc": 0.50162375,
+        "tpr_at_1fpr": 0.0,
+        "tpr_at_5fpr": 0.0,
+        "advantage": 0.014500000000000068,
+        "n_samples": 2000
+      },
+      "SocialNetwork": {
+        "auc": 0.505083771789966,
+        "tpr_at_1fpr": 0.00744047619047619,
+        "tpr_at_5fpr": 0.041666666666666664,
+        "advantage": 0.027529761904761918,
+        "n_samples": 1344
+      },
+      "System": {
+        "auc": 0.48345943061913144,
+        "tpr_at_1fpr": 0.011325028312570781,
+        "tpr_at_5fpr": 0.056625141562853906,
+        "advantage": 0.011325028312570776,
+        "n_samples": 883
+      },
+      "Web": {
+        "auc": 0.49804449999999995,
+        "tpr_at_1fpr": 0.012,
+        "tpr_at_5fpr": 0.0475,
+        "advantage": 0.011499999999999982,
+        "n_samples": 2000
+      }
+    },
+    "macro": {
+      "auc": 0.5000554999684487,
+      "tpr_at_1fpr": 0.006963704485178954,
+      "tpr_at_5fpr": 0.04239228018986992,
+      "advantage": 0.02452680171403707
+    }
+  },
+  "equal_avg": {
+    "auc": 0.5010298749842244,
+    "tpr_at_1fpr": 0.0073151855759228095,
+    "tpr_at_5fpr": 0.04032114009493496,
+    "advantage": 0.023055067523685212
+  },
+  "elapsed_s": 3.797147466801107
+}

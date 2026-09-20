@@ -1,0 +1,53 @@
+{
+  "scope": "Isolated small-model timing only; not utility or attack evidence",
+  "seed": 42,
+  "cpu_model": "AMD EPYC 7702 64-Core Processor",
+  "num_threads": 1,
+  "timing_context": "One experiment process; configurations sequential; both homes simulated sequentially on a shared host",
+  "source_sha256": "a4dcb4db7051d9a52d4e0ffb35ee9a312ff2005075f045a826f7bb939c5bd0b0",
+  "data_sha256": {
+    "home_a": "e34b01a1ac786e8decda51336c81d8163ace4cf5fbe01deea5612b727f510bcb",
+    "home_b": "b46b21c1d6b7b34ffd2028bff174f130940e09e35dd1c84ede8cdc4574698a43"
+  },
+  "input_sha256": {
+    "baseline_16/seed_42/baseline_fl.json": "87729668baf201acc49187e9d9f80e20243cf7c07d8020d5a249b80cc34b6485",
+    "baseline_16/seed_42/fs_mild.json": "120b3dc94a1025cd6c6123a87aa579f76a14e1c16528895ebb8e8a39528e622b",
+    "baseline_16/seed_42/fs_aggressive.json": "5eeb49933825f9b3eb2d0c79b1bec03228aa4d96554c38c89441fdd69fb0995d",
+    "baseline_16/seed_42/dp_sgd.json": "f7c1739adccf1d832b60764108ee0566b73dbf2616c646f121547f6b1fdf3afd",
+    "baseline_16/seed_42/feddpa.json": "e9d5e954bf5540cc41422681395922bd2ebca385d0b6e376ed08bc490d924404"
+  },
+  "runtime_table": {
+    "baseline_fl": {
+      "round_count": 20,
+      "median_round_s": 54.57213132781908,
+      "estimated_run_min": 18.19071044260636,
+      "sum_round_time_min": 18.19954837320062
+    },
+    "fs_mild": {
+      "round_count": 20,
+      "median_round_s": 54.72440637182444,
+      "estimated_run_min": 18.24146879060815,
+      "sum_round_time_min": 18.242475038208067
+    },
+    "fs_aggressive": {
+      "round_count": 20,
+      "median_round_s": 54.74179387278855,
+      "estimated_run_min": 18.24726462426285,
+      "sum_round_time_min": 18.249247228198996
+    },
+    "dp_sgd": {
+      "round_count": 20,
+      "median_round_s": 184.7166856029071,
+      "estimated_run_min": 61.57222853430236,
+      "sum_round_time_min": 61.518053396558386
+    },
+    "feddpa": {
+      "round_count": 20,
+      "median_round_s": 124.38149981433526,
+      "estimated_run_min": 41.46049993811175,
+      "sum_round_time_min": 41.44745429249791
+    }
+  },
+  "dp_sgd_over_fs_mild": 3.3753986173527655,
+  "feddpa_over_fs_mild": 2.272870699943758
+}

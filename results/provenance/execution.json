@@ -1,0 +1,2613 @@
+{
+  "workers": 10,
+  "threads_per_worker": 1,
+  "arguments": {
+    "seeds": [
+      42,
+      123,
+      456,
+      789,
+      1024
+    ],
+    "feature_set": "baseline_16",
+    "model_size": "small",
+    "device": "cpu",
+    "num_threads": 1,
+    "rounds": 20,
+    "local_epochs": 5,
+    "batch_size": 256,
+    "results_dir": "/workspace/residential-experiment/runs/residential_cpu",
+    "home_a": "/workspace/residential-experiment/data/home_A.parquet",
+    "home_b": "/workspace/residential-experiment/data/home_B.parquet",
+    "workers": 10,
+    "capacity": "both",
+    "n_shadows": 4,
+    "max_hours": 36.0,
+    "timing_reference": "/workspace/residential-experiment/runs/benchmark_cpu/benchmark.json",
+    "dry_run": false,
+    "shadow_ratio": 0.5
+  },
+  "job_counts": {
+    "target": 85,
+    "loss": 30,
+    "shadow": 30
+  },
+  "shadow_trainings": 120,
+  "launcher_sha256": "027ab7ca09abc1f9d7e39cadbd34b3cdb71ad573eba4930e54dffa9ca14f436e",
+  "source_sha256": "a4dcb4db7051d9a52d4e0ffb35ee9a312ff2005075f045a826f7bb939c5bd0b0",
+  "data_sha256": {
+    "home_a": "e34b01a1ac786e8decda51336c81d8163ace4cf5fbe01deea5612b727f510bcb",
+    "home_b": "b46b21c1d6b7b34ffd2028bff174f130940e09e35dd1c84ede8cdc4574698a43"
+  },
+  "timing_context": "Concurrent worker schedule; not isolated per-method runtime",
+  "status": "complete",
+  "jobs": {
+    "small_main_baseline_fl_42": {
+      "state": "complete",
+      "pid": 50500,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_42.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_42.json"
+      ],
+      "started_elapsed_s": 18472.496194913052,
+      "returncode": 0,
+      "elapsed_s": 1112.4061299310997
+    },
+    "small_main_baseline_fl_42_loss": {
+      "state": "complete",
+      "pid": 65586,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_42_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_42_loss.json"
+      ],
+      "started_elapsed_s": 33170.895143975504,
+      "returncode": 0,
+      "elapsed_s": 9.039464309811592
+    },
+    "small_main_baseline_fl_42_shadow": {
+      "state": "complete",
+      "pid": 55311,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_42_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_42_shadow.json"
+      ],
+      "started_elapsed_s": 26011.934725719504,
+      "returncode": 0,
+      "elapsed_s": 2436.797514230013
+    },
+    "small_main_baseline_fl_123": {
+      "state": "complete",
+      "pid": 50344,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_123.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_123.json"
+      ],
+      "started_elapsed_s": 18469.454029756598,
+      "returncode": 0,
+      "elapsed_s": 1107.4038461176679
+    },
+    "small_main_baseline_fl_123_loss": {
+      "state": "complete",
+      "pid": 65336,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_123_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_123_loss.json"
+      ],
+      "started_elapsed_s": 33162.85688151233,
+      "returncode": 0,
+      "elapsed_s": 9.053545493632555
+    },
+    "small_main_baseline_fl_123_shadow": {
+      "state": "complete",
+      "pid": 55149,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_123_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_123_shadow.json"
+      ],
+      "started_elapsed_s": 25949.83463367261,
+      "returncode": 0,
+      "elapsed_s": 2411.7706224219874
+    },
+    "small_main_baseline_fl_456": {
+      "state": "complete",
+      "pid": 50693,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_456.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_456.json"
+      ],
+      "started_elapsed_s": 18549.590702281334,
+      "returncode": 0,
+      "elapsed_s": 1131.496322833933
+    },
+    "small_main_baseline_fl_456_loss": {
+      "state": "complete",
+      "pid": 65650,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_456_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_456_loss.json"
+      ],
+      "started_elapsed_s": 33171.91867455281,
+      "returncode": 0,
+      "elapsed_s": 9.040605114772916
+    },
+    "small_main_baseline_fl_456_shadow": {
+      "state": "complete",
+      "pid": 55470,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_456_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_456_shadow.json"
+      ],
+      "started_elapsed_s": 26070.999513144605,
+      "returncode": 0,
+      "elapsed_s": 2429.8082278948277
+    },
+    "small_main_baseline_fl_789": {
+      "state": "complete",
+      "pid": 50694,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_789.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_789.json"
+      ],
+      "started_elapsed_s": 18549.59957403224,
+      "returncode": 0,
+      "elapsed_s": 1121.4051068499684
+    },
+    "small_main_baseline_fl_789_loss": {
+      "state": "complete",
+      "pid": 65900,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_789_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_789_loss.json"
+      ],
+      "started_elapsed_s": 33179.94459239766,
+      "returncode": 0,
+      "elapsed_s": 10.070887241512537
+    },
+    "small_main_baseline_fl_789_shadow": {
+      "state": "complete",
+      "pid": 55629,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_789_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_789_shadow.json"
+      ],
+      "started_elapsed_s": 26157.209758210927,
+      "returncode": 0,
+      "elapsed_s": 2423.699169822037
+    },
+    "small_main_baseline_fl_1024": {
+      "state": "complete",
+      "pid": 50216,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_1024.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_1024.json"
+      ],
+      "started_elapsed_s": 18466.426715211943,
+      "returncode": 0,
+      "elapsed_s": 1091.3980965027586
+    },
+    "small_main_baseline_fl_1024_loss": {
+      "state": "complete",
+      "pid": 65272,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_1024_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_1024_loss.json"
+      ],
+      "started_elapsed_s": 33161.8321343977,
+      "returncode": 0,
+      "elapsed_s": 9.040719461627305
+    },
+    "small_main_baseline_fl_1024_shadow": {
+      "state": "complete",
+      "pid": 54993,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_1024_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_baseline_fl_1024_shadow.json"
+      ],
+      "started_elapsed_s": 25943.808263594285,
+      "returncode": 0,
+      "elapsed_s": 2423.8265622975305
+    },
+    "small_main_fs_mild_42": {
+      "state": "complete",
+      "pid": 49732,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_42.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_42.json"
+      ],
+      "started_elapsed_s": 17435.30732757505,
+      "returncode": 0,
+      "elapsed_s": 1127.3828748585656
+    },
+    "small_main_fs_mild_42_loss": {
+      "state": "complete",
+      "pid": 66376,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_42_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_42_loss.json"
+      ],
+      "started_elapsed_s": 33190.02628139034,
+      "returncode": 0,
+      "elapsed_s": 9.084638039581478
+    },
+    "small_main_fs_mild_42_shadow": {
+      "state": "complete",
+      "pid": 54517,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_42_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_42_shadow.json"
+      ],
+      "started_elapsed_s": 24984.658539278433,
+      "returncode": 0,
+      "elapsed_s": 2464.900099931285
+    },
+    "small_main_fs_mild_123": {
+      "state": "complete",
+      "pid": 49550,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_123.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_123.json"
+      ],
+      "started_elapsed_s": 17370.20820843056,
+      "returncode": 0,
+      "elapsed_s": 1096.2041883599013
+    },
+    "small_main_fs_mild_123_loss": {
+      "state": "complete",
+      "pid": 66158,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_123_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_123_loss.json"
+      ],
+      "started_elapsed_s": 33184.999384880066,
+      "returncode": 0,
+      "elapsed_s": 9.084864569827914
+    },
+    "small_main_fs_mild_123_shadow": {
+      "state": "complete",
+      "pid": 54334,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_123_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_123_shadow.json"
+      ],
+      "started_elapsed_s": 24977.624561831355,
+      "returncode": 0,
+      "elapsed_s": 2422.795386916958
+    },
+    "small_main_fs_mild_456": {
+      "state": "complete",
+      "pid": 49889,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_456.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_456.json"
+      ],
+      "started_elapsed_s": 17453.34416604042,
+      "returncode": 0,
+      "elapsed_s": 1096.2244604025036
+    },
+    "small_main_fs_mild_456_loss": {
+      "state": "complete",
+      "pid": 66377,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_456_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_456_loss.json"
+      ],
+      "started_elapsed_s": 33190.03609542921,
+      "returncode": 0,
+      "elapsed_s": 10.090113694779575
+    },
+    "small_main_fs_mild_456_shadow": {
+      "state": "complete",
+      "pid": 54676,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_456_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_456_shadow.json"
+      ],
+      "started_elapsed_s": 25030.735769352876,
+      "returncode": 0,
+      "elapsed_s": 2443.866619403474
+    },
+    "small_main_fs_mild_789": {
+      "state": "complete",
+      "pid": 50018,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_789.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_789.json"
+      ],
+      "started_elapsed_s": 17457.36951037869,
+      "returncode": 0,
+      "elapsed_s": 1092.2003177832812
+    },
+    "small_main_fs_mild_789_loss": {
+      "state": "complete",
+      "pid": 66635,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_789_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_789_loss.json"
+      ],
+      "started_elapsed_s": 33194.09714663681,
+      "returncode": 0,
+      "elapsed_s": 9.051206125877798
+    },
+    "small_main_fs_mild_789_shadow": {
+      "state": "complete",
+      "pid": 54834,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_789_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_789_shadow.json"
+      ],
+      "started_elapsed_s": 25036.772121487185,
+      "returncode": 0,
+      "elapsed_s": 2480.896901190281
+    },
+    "small_main_fs_mild_1024": {
+      "state": "complete",
+      "pid": 49421,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_1024.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_1024.json"
+      ],
+      "started_elapsed_s": 17365.14076528512,
+      "returncode": 0,
+      "elapsed_s": 1107.329399135895
+    },
+    "small_main_fs_mild_1024_loss": {
+      "state": "complete",
+      "pid": 65964,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_1024_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_1024_loss.json"
+      ],
+      "started_elapsed_s": 33180.9676110344,
+      "returncode": 0,
+      "elapsed_s": 9.048539236187935
+    },
+    "small_main_fs_mild_1024_shadow": {
+      "state": "complete",
+      "pid": 54205,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_1024_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_mild_1024_shadow.json"
+      ],
+      "started_elapsed_s": 24972.59089773614,
+      "returncode": 0,
+      "elapsed_s": 2465.934856385924
+    },
+    "small_main_fs_aggressive_42": {
+      "state": "complete",
+      "pid": 58506,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_aggressive_42.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_aggressive_42.json"
+      ],
+      "started_elapsed_s": 29964.54020255804,
+      "returncode": 0,
+      "elapsed_s": 1101.293584132567
+    },
+    "small_main_fs_aggressive_123": {
+      "state": "complete",
+      "pid": 58353,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_aggressive_123.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_aggressive_123.json"
+      ],
+      "started_elapsed_s": 29947.509786550887,
+      "returncode": 0,
+      "elapsed_s": 1108.2949756793678
+    },
+    "small_main_fs_aggressive_456": {
+      "state": "complete",
+      "pid": 58658,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_aggressive_456.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_aggressive_456.json"
+      ],
+      "started_elapsed_s": 29986.57367883995,
+      "returncode": 0,
+      "elapsed_s": 1103.2923447620124
+    },
+    "small_main_fs_aggressive_789": {
+      "state": "complete",
+      "pid": 58810,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_aggressive_789.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_aggressive_789.json"
+      ],
+      "started_elapsed_s": 30011.614943373017,
+      "returncode": 0,
+      "elapsed_s": 1108.334335279651
+    },
+    "small_main_fs_aggressive_1024": {
+      "state": "complete",
+      "pid": 58192,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_aggressive_1024.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_fs_aggressive_1024.json"
+      ],
+      "started_elapsed_s": 29881.400801012293,
+      "returncode": 0,
+      "elapsed_s": 1107.2945575146005
+    },
+    "small_main_dp_sgd_42": {
+      "state": "complete",
+      "pid": 43521,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_42.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_42.json"
+      ],
+      "started_elapsed_s": 0.07582389749586582,
+      "returncode": 0,
+      "elapsed_s": 3723.865161904134
+    },
+    "small_main_dp_sgd_42_loss": {
+      "state": "complete",
+      "pid": 63138,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_42_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_42_loss.json"
+      ],
+      "started_elapsed_s": 33094.31145283021,
+      "returncode": 0,
+      "elapsed_s": 9.038287837989628
+    },
+    "small_main_dp_sgd_42_shadow": {
+      "state": "complete",
+      "pid": 45763,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_42_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_42_shadow.json"
+      ],
+      "started_elapsed_s": 3723.9532563323155,
+      "returncode": 0,
+      "elapsed_s": 5625.783291458152
+    },
+    "small_main_dp_sgd_123": {
+      "state": "complete",
+      "pid": 43520,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_123.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_123.json"
+      ],
+      "started_elapsed_s": 0.06651591788977385,
+      "returncode": 0,
+      "elapsed_s": 3715.8473099637777
+    },
+    "small_main_dp_sgd_123_loss": {
+      "state": "complete",
+      "pid": 63074,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_123_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_123_loss.json"
+      ],
+      "started_elapsed_s": 33093.27234429959,
+      "returncode": 0,
+      "elapsed_s": 9.055392477661371
+    },
+    "small_main_dp_sgd_123_shadow": {
+      "state": "complete",
+      "pid": 45604,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_123_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_123_shadow.json"
+      ],
+      "started_elapsed_s": 3715.9257092485204,
+      "returncode": 0,
+      "elapsed_s": 5694.991979259066
+    },
+    "small_main_dp_sgd_456": {
+      "state": "complete",
+      "pid": 43522,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_456.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_456.json"
+      ],
+      "started_elapsed_s": 0.09368820115923882,
+      "returncode": 0,
+      "elapsed_s": 3754.91332925763
+    },
+    "small_main_dp_sgd_456_loss": {
+      "state": "complete",
+      "pid": 63388,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_456_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_456_loss.json"
+      ],
+      "started_elapsed_s": 33102.33740169369,
+      "returncode": 0,
+      "elapsed_s": 9.039453949779272
+    },
+    "small_main_dp_sgd_456_shadow": {
+      "state": "complete",
+      "pid": 45924,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_456_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_456_shadow.json"
+      ],
+      "started_elapsed_s": 3755.023217473179,
+      "returncode": 0,
+      "elapsed_s": 5699.992287832312
+    },
+    "small_main_dp_sgd_789": {
+      "state": "complete",
+      "pid": 43523,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_789.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_789.json"
+      ],
+      "started_elapsed_s": 0.1014209920540452,
+      "returncode": 0,
+      "elapsed_s": 3686.72680402454
+    },
+    "small_main_dp_sgd_789_loss": {
+      "state": "complete",
+      "pid": 63452,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_789_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_789_loss.json"
+      ],
+      "started_elapsed_s": 33103.36015731003,
+      "returncode": 0,
+      "elapsed_s": 9.048390013165772
+    },
+    "small_main_dp_sgd_789_shadow": {
+      "state": "complete",
+      "pid": 45286,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_789_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_789_shadow.json"
+      ],
+      "started_elapsed_s": 3686.842590882443,
+      "returncode": 0,
+      "elapsed_s": 5720.043210750446
+    },
+    "small_main_dp_sgd_1024": {
+      "state": "complete",
+      "pid": 43519,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_1024.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_1024.json"
+      ],
+      "started_elapsed_s": 0.05749770812690258,
+      "returncode": 0,
+      "elapsed_s": 3701.801851786673
+    },
+    "small_main_dp_sgd_1024_loss": {
+      "state": "complete",
+      "pid": 62825,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_1024_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_1024_loss.json"
+      ],
+      "started_elapsed_s": 33085.24592028558,
+      "returncode": 0,
+      "elapsed_s": 9.053234493359923
+    },
+    "small_main_dp_sgd_1024_shadow": {
+      "state": "complete",
+      "pid": 45445,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_1024_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_dp_sgd_1024_shadow.json"
+      ],
+      "started_elapsed_s": 3701.8739993693307,
+      "returncode": 0,
+      "elapsed_s": 5699.941386855207
+    },
+    "small_main_feddpa_42": {
+      "state": "complete",
+      "pid": 56107,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_feddpa_42.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_feddpa_42.json"
+      ],
+      "started_elapsed_s": 27449.572187733836,
+      "returncode": 0,
+      "elapsed_s": 2536.9862013487145
+    },
+    "small_main_feddpa_123": {
+      "state": "complete",
+      "pid": 55948,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_feddpa_123.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_feddpa_123.json"
+      ],
+      "started_elapsed_s": 27438.540168801323,
+      "returncode": 0,
+      "elapsed_s": 2508.9548961296678
+    },
+    "small_main_feddpa_456": {
+      "state": "complete",
+      "pid": 56266,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_feddpa_456.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_feddpa_456.json"
+      ],
+      "started_elapsed_s": 27474.61707412824,
+      "returncode": 0,
+      "elapsed_s": 2489.9122855588794
+    },
+    "small_main_feddpa_789": {
+      "state": "complete",
+      "pid": 56425,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_feddpa_789.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_feddpa_789.json"
+      ],
+      "started_elapsed_s": 27517.701079074293,
+      "returncode": 0,
+      "elapsed_s": 2493.9012646162882
+    },
+    "small_main_feddpa_1024": {
+      "state": "complete",
+      "pid": 55789,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_feddpa_1024.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_main_feddpa_1024.json"
+      ],
+      "started_elapsed_s": 27400.435328297317,
+      "returncode": 0,
+      "elapsed_s": 2480.941643377766
+    },
+    "small_temporal_baseline_fl_42": {
+      "state": "complete",
+      "pid": 60082,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_baseline_fl_42.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_baseline_fl_42.json"
+      ],
+      "started_elapsed_s": 31089.887941714376,
+      "returncode": 0,
+      "elapsed_s": 1119.3449614876881
+    },
+    "small_temporal_baseline_fl_123": {
+      "state": "complete",
+      "pid": 59922,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_baseline_fl_123.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_baseline_fl_123.json"
+      ],
+      "started_elapsed_s": 31065.84439536836,
+      "returncode": 0,
+      "elapsed_s": 1123.34560392797
+    },
+    "small_temporal_baseline_fl_456": {
+      "state": "complete",
+      "pid": 60210,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_baseline_fl_456.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_baseline_fl_456.json"
+      ],
+      "started_elapsed_s": 31092.914789394476,
+      "returncode": 0,
+      "elapsed_s": 1096.276458811015
+    },
+    "small_temporal_baseline_fl_789": {
+      "state": "complete",
+      "pid": 60402,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_baseline_fl_789.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_baseline_fl_789.json"
+      ],
+      "started_elapsed_s": 31120.005220924504,
+      "returncode": 0,
+      "elapsed_s": 1097.256044833921
+    },
+    "small_temporal_baseline_fl_1024": {
+      "state": "complete",
+      "pid": 59762,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_baseline_fl_1024.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_baseline_fl_1024.json"
+      ],
+      "started_elapsed_s": 31055.81776783429,
+      "returncode": 0,
+      "elapsed_s": 1123.3298014942557
+    },
+    "small_temporal_fs_mild_42": {
+      "state": "complete",
+      "pid": 61506,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_fs_mild_42.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_fs_mild_42.json"
+      ],
+      "started_elapsed_s": 32189.213850535452,
+      "returncode": 0,
+      "elapsed_s": 1108.150661018677
+    },
+    "small_temporal_fs_mild_123": {
+      "state": "complete",
+      "pid": 61505,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_fs_mild_123.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_fs_mild_123.json"
+      ],
+      "started_elapsed_s": 32189.20435138326,
+      "returncode": 0,
+      "elapsed_s": 1116.1891855793074
+    },
+    "small_temporal_fs_mild_456": {
+      "state": "complete",
+      "pid": 61819,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_fs_mild_456.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_fs_mild_456.json"
+      ],
+      "started_elapsed_s": 32209.24497245066,
+      "returncode": 0,
+      "elapsed_s": 1120.1903643142432
+    },
+    "small_temporal_fs_mild_789": {
+      "state": "complete",
+      "pid": 61975,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_fs_mild_789.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_fs_mild_789.json"
+      ],
+      "started_elapsed_s": 32217.272554173134,
+      "returncode": 0,
+      "elapsed_s": 1105.141098313965
+    },
+    "small_temporal_fs_mild_1024": {
+      "state": "complete",
+      "pid": 61346,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_fs_mild_1024.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_fs_mild_1024.json"
+      ],
+      "started_elapsed_s": 32179.162215574645,
+      "returncode": 0,
+      "elapsed_s": 1103.1804190156981
+    },
+    "small_temporal_dp_sgd_42": {
+      "state": "complete",
+      "pid": 53725,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_dp_sgd_42.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_dp_sgd_42.json"
+      ],
+      "started_elapsed_s": 22315.274016152136,
+      "returncode": 0,
+      "elapsed_s": 3696.6452636215836
+    },
+    "small_temporal_dp_sgd_123": {
+      "state": "complete",
+      "pid": 53565,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_dp_sgd_123.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_dp_sgd_123.json"
+      ],
+      "started_elapsed_s": 22274.207215541974,
+      "returncode": 0,
+      "elapsed_s": 3669.5865919645876
+    },
+    "small_temporal_dp_sgd_456": {
+      "state": "complete",
+      "pid": 53885,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_dp_sgd_456.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_dp_sgd_456.json"
+      ],
+      "started_elapsed_s": 22414.430448052473,
+      "returncode": 0,
+      "elapsed_s": 3656.552043297328
+    },
+    "small_temporal_dp_sgd_789": {
+      "state": "complete",
+      "pid": 54045,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_dp_sgd_789.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_dp_sgd_789.json"
+      ],
+      "started_elapsed_s": 22441.50009407848,
+      "returncode": 0,
+      "elapsed_s": 3715.695475392975
+    },
+    "small_temporal_dp_sgd_1024": {
+      "state": "complete",
+      "pid": 53405,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_dp_sgd_1024.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_temporal_dp_sgd_1024.json"
+      ],
+      "started_elapsed_s": 22263.165698889643,
+      "returncode": 0,
+      "elapsed_s": 3686.658868385479
+    },
+    "small_equal_baseline_fl_42": {
+      "state": "complete",
+      "pid": 59280,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_baseline_fl_42.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_baseline_fl_42.json"
+      ],
+      "started_elapsed_s": 30964.665964229032,
+      "returncode": 0,
+      "elapsed_s": 1112.3378808265552
+    },
+    "small_equal_baseline_fl_123": {
+      "state": "complete",
+      "pid": 59118,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_baseline_fl_123.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_baseline_fl_123.json"
+      ],
+      "started_elapsed_s": 30855.553869525902,
+      "returncode": 0,
+      "elapsed_s": 1095.246960805729
+    },
+    "small_equal_baseline_fl_456": {
+      "state": "complete",
+      "pid": 59439,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_baseline_fl_456.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_baseline_fl_456.json"
+      ],
+      "started_elapsed_s": 30988.70596812386,
+      "returncode": 0,
+      "elapsed_s": 1108.3357293568552
+    },
+    "small_equal_baseline_fl_789": {
+      "state": "complete",
+      "pid": 59603,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_baseline_fl_789.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_baseline_fl_789.json"
+      ],
+      "started_elapsed_s": 31000.74514289666,
+      "returncode": 0,
+      "elapsed_s": 1096.2977856704965
+    },
+    "small_equal_baseline_fl_1024": {
+      "state": "complete",
+      "pid": 58962,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_baseline_fl_1024.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_baseline_fl_1024.json"
+      ],
+      "started_elapsed_s": 30849.526690542698,
+      "returncode": 0,
+      "elapsed_s": 1121.3126524463296
+    },
+    "small_equal_fs_mild_42": {
+      "state": "complete",
+      "pid": 60878,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_fs_mild_42.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_fs_mild_42.json"
+      ],
+      "started_elapsed_s": 32077.020026485436,
+      "returncode": 0,
+      "elapsed_s": 1107.9692554082721
+    },
+    "small_equal_fs_mild_123": {
+      "state": "complete",
+      "pid": 60722,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_fs_mild_123.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_fs_mild_123.json"
+      ],
+      "started_elapsed_s": 31970.85254448466,
+      "returncode": 0,
+      "elapsed_s": 1104.3175775939599
+    },
+    "small_equal_fs_mild_456": {
+      "state": "complete",
+      "pid": 61034,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_fs_mild_456.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_fs_mild_456.json"
+      ],
+      "started_elapsed_s": 32097.056583282538,
+      "returncode": 0,
+      "elapsed_s": 1117.186504690908
+    },
+    "small_equal_fs_mild_789": {
+      "state": "complete",
+      "pid": 61035,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_fs_mild_789.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_fs_mild_789.json"
+      ],
+      "started_elapsed_s": 32097.067237103358,
+      "returncode": 0,
+      "elapsed_s": 1108.0982117867097
+    },
+    "small_equal_fs_mild_1024": {
+      "state": "complete",
+      "pid": 60562,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_fs_mild_1024.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_fs_mild_1024.json"
+      ],
+      "started_elapsed_s": 31950.81717363838,
+      "returncode": 0,
+      "elapsed_s": 1102.2510966258124
+    },
+    "small_equal_dp_sgd_42": {
+      "state": "complete",
+      "pid": 52928,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_dp_sgd_42.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_dp_sgd_42.json"
+      ],
+      "started_elapsed_s": 21298.011768264696,
+      "returncode": 0,
+      "elapsed_s": 3738.7457163631916
+    },
+    "small_equal_dp_sgd_123": {
+      "state": "complete",
+      "pid": 52769,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_dp_sgd_123.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_dp_sgd_123.json"
+      ],
+      "started_elapsed_s": 21288.912803080864,
+      "returncode": 0,
+      "elapsed_s": 3683.6505464427173
+    },
+    "small_equal_dp_sgd_456": {
+      "state": "complete",
+      "pid": 53087,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_dp_sgd_456.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_dp_sgd_456.json"
+      ],
+      "started_elapsed_s": 21308.11383780092,
+      "returncode": 0,
+      "elapsed_s": 3676.5302603114396
+    },
+    "small_equal_dp_sgd_789": {
+      "state": "complete",
+      "pid": 53088,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_dp_sgd_789.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_dp_sgd_789.json"
+      ],
+      "started_elapsed_s": 21308.14642169606,
+      "returncode": 0,
+      "elapsed_s": 3722.5692993123084
+    },
+    "small_equal_dp_sgd_1024": {
+      "state": "complete",
+      "pid": 52610,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_dp_sgd_1024.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/small_equal_dp_sgd_1024.json"
+      ],
+      "started_elapsed_s": 21265.84917105362,
+      "returncode": 0,
+      "elapsed_s": 3711.7621788829565
+    },
+    "medium_main_baseline_fl_42": {
+      "state": "complete",
+      "pid": 48914,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_42.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_42.json"
+      ],
+      "started_elapsed_s": 17296.005011601374,
+      "returncode": 0,
+      "elapsed_s": 1265.6433726008981
+    },
+    "medium_main_baseline_fl_42_loss": {
+      "state": "complete",
+      "pid": 64708,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_42_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_42_loss.json"
+      ],
+      "started_elapsed_s": 33142.73040053714,
+      "returncode": 0,
+      "elapsed_s": 10.062014305964112
+    },
+    "medium_main_baseline_fl_42_shadow": {
+      "state": "complete",
+      "pid": 52106,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_42_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_42_shadow.json"
+      ],
+      "started_elapsed_s": 19584.917890814133,
+      "returncode": 0,
+      "elapsed_s": 2730.333698091097
+    },
+    "medium_main_baseline_fl_123": {
+      "state": "complete",
+      "pid": 48785,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_123.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_123.json"
+      ],
+      "started_elapsed_s": 17291.96872684732,
+      "returncode": 0,
+      "elapsed_s": 1259.6476411512122
+    },
+    "medium_main_baseline_fl_123_loss": {
+      "state": "complete",
+      "pid": 64644,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_123_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_123_loss.json"
+      ],
+      "started_elapsed_s": 33141.70125717111,
+      "returncode": 0,
+      "elapsed_s": 10.04702524933964
+    },
+    "medium_main_baseline_fl_123_shadow": {
+      "state": "complete",
+      "pid": 51947,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_123_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_123_shadow.json"
+      ],
+      "started_elapsed_s": 19576.87246710621,
+      "returncode": 0,
+      "elapsed_s": 2697.3213117448613
+    },
+    "medium_main_baseline_fl_456": {
+      "state": "complete",
+      "pid": 49103,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_456.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_456.json"
+      ],
+      "started_elapsed_s": 17316.039202071726,
+      "returncode": 0,
+      "elapsed_s": 1250.6790013769642
+    },
+    "medium_main_baseline_fl_456_loss": {
+      "state": "complete",
+      "pid": 64958,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_456_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_456_loss.json"
+      ],
+      "started_elapsed_s": 33151.76152427308,
+      "returncode": 0,
+      "elapsed_s": 10.057861187495291
+    },
+    "medium_main_baseline_fl_456_shadow": {
+      "state": "complete",
+      "pid": 52265,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_456_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_456_shadow.json"
+      ],
+      "started_elapsed_s": 19671.020345650613,
+      "returncode": 0,
+      "elapsed_s": 2743.374956816435
+    },
+    "medium_main_baseline_fl_789": {
+      "state": "complete",
+      "pid": 49232,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_789.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_789.json"
+      ],
+      "started_elapsed_s": 17320.06798724737,
+      "returncode": 0,
+      "elapsed_s": 1253.6822693897411
+    },
+    "medium_main_baseline_fl_789_loss": {
+      "state": "complete",
+      "pid": 65022,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_789_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_789_loss.json"
+      ],
+      "started_elapsed_s": 33152.80250599794,
+      "returncode": 0,
+      "elapsed_s": 10.04595988895744
+    },
+    "medium_main_baseline_fl_789_shadow": {
+      "state": "complete",
+      "pid": 52424,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_789_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_789_shadow.json"
+      ],
+      "started_elapsed_s": 19681.10217023827,
+      "returncode": 0,
+      "elapsed_s": 2760.369789686054
+    },
+    "medium_main_baseline_fl_1024": {
+      "state": "complete",
+      "pid": 48626,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_1024.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_1024.json"
+      ],
+      "started_elapsed_s": 17209.866851774044,
+      "returncode": 0,
+      "elapsed_s": 1259.5734813893214
+    },
+    "medium_main_baseline_fl_1024_loss": {
+      "state": "complete",
+      "pid": 64397,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_1024_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_1024_loss.json"
+      ],
+      "started_elapsed_s": 33132.65854842588,
+      "returncode": 0,
+      "elapsed_s": 10.05930001847446
+    },
+    "medium_main_baseline_fl_1024_shadow": {
+      "state": "complete",
+      "pid": 51788,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_1024_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_baseline_fl_1024_shadow.json"
+      ],
+      "started_elapsed_s": 19557.83688988909,
+      "returncode": 0,
+      "elapsed_s": 2705.314173685387
+    },
+    "medium_main_fs_mild_42": {
+      "state": "complete",
+      "pid": 48143,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_42.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_42.json"
+      ],
+      "started_elapsed_s": 16039.471170952544,
+      "returncode": 0,
+      "elapsed_s": 1256.5213218200952
+    },
+    "medium_main_fs_mild_42_loss": {
+      "state": "complete",
+      "pid": 64015,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_42_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_42_loss.json"
+      ],
+      "started_elapsed_s": 33121.44193838164,
+      "returncode": 0,
+      "elapsed_s": 10.179538297466934
+    },
+    "medium_main_fs_mild_42_shadow": {
+      "state": "complete",
+      "pid": 51230,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_42_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_42_shadow.json"
+      ],
+      "started_elapsed_s": 18562.70091830194,
+      "returncode": 0,
+      "elapsed_s": 2745.386340423487
+    },
+    "medium_main_fs_mild_123": {
+      "state": "complete",
+      "pid": 47986,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_123.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_123.json"
+      ],
+      "started_elapsed_s": 16017.43009461835,
+      "returncode": 0,
+      "elapsed_s": 1274.523271898739
+    },
+    "medium_main_fs_mild_123_loss": {
+      "state": "complete",
+      "pid": 63769,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_123_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_123_loss.json"
+      ],
+      "started_elapsed_s": 33112.41664030682,
+      "returncode": 0,
+      "elapsed_s": 10.03754417411983
+    },
+    "medium_main_fs_mild_123_shadow": {
+      "state": "complete",
+      "pid": 51166,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_123_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_123_shadow.json"
+      ],
+      "started_elapsed_s": 18561.66390706133,
+      "returncode": 0,
+      "elapsed_s": 2736.323103174567
+    },
+    "medium_main_fs_mild_456": {
+      "state": "complete",
+      "pid": 48299,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_456.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_456.json"
+      ],
+      "started_elapsed_s": 16060.522028760985,
+      "returncode": 0,
+      "elapsed_s": 1259.5341427698731
+    },
+    "medium_main_fs_mild_456_loss": {
+      "state": "complete",
+      "pid": 64079,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_456_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_456_loss.json"
+      ],
+      "started_elapsed_s": 33122.59866533242,
+      "returncode": 0,
+      "elapsed_s": 10.050108881667256
+    },
+    "medium_main_fs_mild_456_shadow": {
+      "state": "complete",
+      "pid": 51424,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_456_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_456_shadow.json"
+      ],
+      "started_elapsed_s": 18566.730555361137,
+      "returncode": 0,
+      "elapsed_s": 2699.099156074226
+    },
+    "medium_main_fs_mild_789": {
+      "state": "complete",
+      "pid": 48454,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_789.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_789.json"
+      ],
+      "started_elapsed_s": 16092.632650509477,
+      "returncode": 0,
+      "elapsed_s": 1272.4935518382117
+    },
+    "medium_main_fs_mild_789_loss": {
+      "state": "complete",
+      "pid": 64333,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_789_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_789_loss.json"
+      ],
+      "started_elapsed_s": 33131.6329232743,
+      "returncode": 0,
+      "elapsed_s": 10.041665242984891
+    },
+    "medium_main_fs_mild_789_shadow": {
+      "state": "complete",
+      "pid": 51631,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_789_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_789_shadow.json"
+      ],
+      "started_elapsed_s": 18573.761981029063,
+      "returncode": 0,
+      "elapsed_s": 2734.326537246816
+    },
+    "medium_main_fs_mild_1024": {
+      "state": "complete",
+      "pid": 47831,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_1024.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_1024.json"
+      ],
+      "started_elapsed_s": 15928.319569785148,
+      "returncode": 0,
+      "elapsed_s": 1281.5309991287068
+    },
+    "medium_main_fs_mild_1024_loss": {
+      "state": "complete",
+      "pid": 63705,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_1024_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_1024_loss.json"
+      ],
+      "started_elapsed_s": 33111.39436858799,
+      "returncode": 0,
+      "elapsed_s": 10.037386394105852
+    },
+    "medium_main_fs_mild_1024_shadow": {
+      "state": "complete",
+      "pid": 50821,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_1024_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_fs_mild_1024_shadow.json"
+      ],
+      "started_elapsed_s": 18551.630501671694,
+      "returncode": 0,
+      "elapsed_s": 2737.260627472773
+    },
+    "medium_main_dp_sgd_42": {
+      "state": "complete",
+      "pid": 43516,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_42.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_42.json"
+      ],
+      "started_elapsed_s": 0.029308565892279148,
+      "returncode": 0,
+      "elapsed_s": 6216.656499397941
+    },
+    "medium_main_dp_sgd_42_loss": {
+      "state": "complete",
+      "pid": 62446,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_42_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_42_loss.json"
+      ],
+      "started_elapsed_s": 33073.15491427295,
+      "returncode": 0,
+      "elapsed_s": 10.05081476084888
+    },
+    "medium_main_dp_sgd_42_shadow": {
+      "state": "complete",
+      "pid": 46531,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_42_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_42_shadow.json"
+      ],
+      "started_elapsed_s": 6216.705204373226,
+      "returncode": 0,
+      "elapsed_s": 11218.58607246168
+    },
+    "medium_main_dp_sgd_123": {
+      "state": "complete",
+      "pid": 43515,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_123.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_123.json"
+      ],
+      "started_elapsed_s": 0.019276232458651066,
+      "returncode": 0,
+      "elapsed_s": 6214.6030338527635
+    },
+    "medium_main_dp_sgd_123_loss": {
+      "state": "complete",
+      "pid": 62289,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_123_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_123_loss.json"
+      ],
+      "started_elapsed_s": 33063.123833962716,
+      "returncode": 0,
+      "elapsed_s": 10.01700151246041
+    },
+    "medium_main_dp_sgd_123_shadow": {
+      "state": "complete",
+      "pid": 46439,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_123_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_123_shadow.json"
+      ],
+      "started_elapsed_s": 6214.64169011265,
+      "returncode": 0,
+      "elapsed_s": 11101.382942508906
+    },
+    "medium_main_dp_sgd_456": {
+      "state": "complete",
+      "pid": 43517,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_456.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_456.json"
+      ],
+      "started_elapsed_s": 0.03924504853785038,
+      "returncode": 0,
+      "elapsed_s": 6159.491574157961
+    },
+    "medium_main_dp_sgd_456_loss": {
+      "state": "complete",
+      "pid": 62510,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_456_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_456_loss.json"
+      ],
+      "started_elapsed_s": 33075.188133738935,
+      "returncode": 0,
+      "elapsed_s": 10.04798424988985
+    },
+    "medium_main_dp_sgd_456_shadow": {
+      "state": "complete",
+      "pid": 46152,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_456_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_456_shadow.json"
+      ],
+      "started_elapsed_s": 6159.544910289347,
+      "returncode": 0,
+      "elapsed_s": 11293.782701715827
+    },
+    "medium_main_dp_sgd_789": {
+      "state": "complete",
+      "pid": 43518,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_789.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_789.json"
+      ],
+      "started_elapsed_s": 0.04800819419324398,
+      "returncode": 0,
+      "elapsed_s": 6210.5479318453
+    },
+    "medium_main_dp_sgd_789_loss": {
+      "state": "complete",
+      "pid": 62760,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_789_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_789_loss.json"
+      ],
+      "started_elapsed_s": 33083.21995829791,
+      "returncode": 0,
+      "elapsed_s": 10.041390249505639
+    },
+    "medium_main_dp_sgd_789_shadow": {
+      "state": "complete",
+      "pid": 46311,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_789_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_789_shadow.json"
+      ],
+      "started_elapsed_s": 6210.607202204876,
+      "returncode": 0,
+      "elapsed_s": 11246.752068938687
+    },
+    "medium_main_dp_sgd_1024": {
+      "state": "complete",
+      "pid": 43514,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_1024.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_1024.json"
+      ],
+      "started_elapsed_s": 0.00895780511200428,
+      "returncode": 0,
+      "elapsed_s": 6234.721113905311
+    },
+    "medium_main_dp_sgd_1024_loss": {
+      "state": "complete",
+      "pid": 62132,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_1024_loss.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_1024_loss.json"
+      ],
+      "started_elapsed_s": 33053.089636838995,
+      "returncode": 0,
+      "elapsed_s": 10.02024427242577
+    },
+    "medium_main_dp_sgd_1024_shadow": {
+      "state": "complete",
+      "pid": 46789,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_1024_shadow.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_main_dp_sgd_1024_shadow.json"
+      ],
+      "started_elapsed_s": 6234.741901223548,
+      "returncode": 0,
+      "elapsed_s": 11135.443852456287
+    },
+    "medium_temporal_baseline_fl_42": {
+      "state": "complete",
+      "pid": 57712,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_baseline_fl_42.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_baseline_fl_42.json"
+      ],
+      "started_elapsed_s": 29698.155491671525,
+      "returncode": 0,
+      "elapsed_s": 1266.4986361926422
+    },
+    "medium_temporal_baseline_fl_123": {
+      "state": "complete",
+      "pid": 57520,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_baseline_fl_123.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_baseline_fl_123.json"
+      ],
+      "started_elapsed_s": 29617.03020483814,
+      "returncode": 0,
+      "elapsed_s": 1232.4835963211954
+    },
+    "medium_temporal_baseline_fl_456": {
+      "state": "complete",
+      "pid": 57872,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_baseline_fl_456.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_baseline_fl_456.json"
+      ],
+      "started_elapsed_s": 29745.2230352927,
+      "returncode": 0,
+      "elapsed_s": 1255.5026518339291
+    },
+    "medium_temporal_baseline_fl_789": {
+      "state": "complete",
+      "pid": 58032,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_baseline_fl_789.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_baseline_fl_789.json"
+      ],
+      "started_elapsed_s": 29835.327553392388,
+      "returncode": 0,
+      "elapsed_s": 1257.575607771054
+    },
+    "medium_temporal_baseline_fl_1024": {
+      "state": "complete",
+      "pid": 57392,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_baseline_fl_1024.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_baseline_fl_1024.json"
+      ],
+      "started_elapsed_s": 29612.993216668256,
+      "returncode": 0,
+      "elapsed_s": 1242.5485443053767
+    },
+    "medium_temporal_fs_mild_42": {
+      "state": "complete",
+      "pid": 56897,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_fs_mild_42.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_fs_mild_42.json"
+      ],
+      "started_elapsed_s": 28448.74605530966,
+      "returncode": 0,
+      "elapsed_s": 1249.3939191428944
+    },
+    "medium_temporal_fs_mild_123": {
+      "state": "complete",
+      "pid": 56737,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_fs_mild_123.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_fs_mild_123.json"
+      ],
+      "started_elapsed_s": 28367.647965298966,
+      "returncode": 0,
+      "elapsed_s": 1249.3620298979804
+    },
+    "medium_temporal_fs_mild_456": {
+      "state": "complete",
+      "pid": 57064,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_fs_mild_456.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_fs_mild_456.json"
+      ],
+      "started_elapsed_s": 28500.820926642977,
+      "returncode": 0,
+      "elapsed_s": 1244.389486852102
+    },
+    "medium_temporal_fs_mild_789": {
+      "state": "complete",
+      "pid": 57220,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_fs_mild_789.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_fs_mild_789.json"
+      ],
+      "started_elapsed_s": 28580.92376019247,
+      "returncode": 0,
+      "elapsed_s": 1254.3889333680272
+    },
+    "medium_temporal_fs_mild_1024": {
+      "state": "complete",
+      "pid": 56584,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_fs_mild_1024.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_fs_mild_1024.json"
+      ],
+      "started_elapsed_s": 28361.61860971898,
+      "returncode": 0,
+      "elapsed_s": 1251.3504261439666
+    },
+    "medium_temporal_dp_sgd_42": {
+      "state": "complete",
+      "pid": 47267,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_dp_sgd_42.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_dp_sgd_42.json"
+      ],
+      "started_elapsed_s": 9406.901634089649,
+      "returncode": 0,
+      "elapsed_s": 6610.511998599395
+    },
+    "medium_temporal_dp_sgd_123": {
+      "state": "complete",
+      "pid": 47110,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_dp_sgd_123.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_dp_sgd_123.json"
+      ],
+      "started_elapsed_s": 9401.83058368694,
+      "returncode": 0,
+      "elapsed_s": 6637.623308014125
+    },
+    "medium_temporal_dp_sgd_456": {
+      "state": "complete",
+      "pid": 47399,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_dp_sgd_456.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_dp_sgd_456.json"
+      ],
+      "started_elapsed_s": 9410.930462751538,
+      "returncode": 0,
+      "elapsed_s": 6649.574787969701
+    },
+    "medium_temporal_dp_sgd_789": {
+      "state": "complete",
+      "pid": 47590,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_dp_sgd_789.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_dp_sgd_789.json"
+      ],
+      "started_elapsed_s": 9455.032911457121,
+      "returncode": 0,
+      "elapsed_s": 6637.583493702114
+    },
+    "medium_temporal_dp_sgd_1024": {
+      "state": "complete",
+      "pid": 46950,
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_dp_sgd_1024.log",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "/workspace/residential-experiment/scripts/run_parallel_suite.py",
+        "--job-file",
+        "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/medium_temporal_dp_sgd_1024.json"
+      ],
+      "started_elapsed_s": 9349.750670651905,
+      "returncode": 0,
+      "elapsed_s": 6578.552384162322
+    }
+  },
+  "finalization": [
+    {
+      "stage": "temporal",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "scripts/temporal_split_check.py",
+        "--feature-set",
+        "baseline_16",
+        "--results-dir",
+        "/workspace/residential-experiment/runs/residential_cpu",
+        "--seeds",
+        "42",
+        "123",
+        "456",
+        "789",
+        "1024",
+        "--device",
+        "cpu",
+        "--num-threads",
+        "1",
+        "--rounds",
+        "20",
+        "--local-epochs",
+        "5",
+        "--batch-size",
+        "256",
+        "--home-a",
+        "/workspace/residential-experiment/data/home_A.parquet",
+        "--home-b",
+        "/workspace/residential-experiment/data/home_B.parquet",
+        "--model-size",
+        "small"
+      ],
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/final_0_temporal.log",
+      "returncode": 0,
+      "elapsed_s": 34.0046775136143
+    },
+    {
+      "stage": "mia",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "-m",
+        "fl_pipeline.run_mia",
+        "--feature-set",
+        "baseline_16",
+        "--results-dir",
+        "/workspace/residential-experiment/runs/residential_cpu",
+        "--seeds",
+        "42",
+        "123",
+        "456",
+        "789",
+        "1024",
+        "--device",
+        "cpu",
+        "--num-threads",
+        "1",
+        "--rounds",
+        "20",
+        "--local-epochs",
+        "5",
+        "--batch-size",
+        "256",
+        "--home-a",
+        "/workspace/residential-experiment/data/home_A.parquet",
+        "--home-b",
+        "/workspace/residential-experiment/data/home_B.parquet",
+        "--model-size",
+        "small",
+        "--configs",
+        "baseline_fl",
+        "fs_mild",
+        "dp_sgd"
+      ],
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/final_1_mia.log",
+      "returncode": 0,
+      "elapsed_s": 41.00572802312672
+    },
+    {
+      "stage": "shadow",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "-m",
+        "fl_pipeline.run_shadow_mia",
+        "--feature-set",
+        "baseline_16",
+        "--results-dir",
+        "/workspace/residential-experiment/runs/residential_cpu",
+        "--seeds",
+        "42",
+        "123",
+        "456",
+        "789",
+        "1024",
+        "--device",
+        "cpu",
+        "--num-threads",
+        "1",
+        "--rounds",
+        "20",
+        "--local-epochs",
+        "5",
+        "--batch-size",
+        "256",
+        "--home-a",
+        "/workspace/residential-experiment/data/home_A.parquet",
+        "--home-b",
+        "/workspace/residential-experiment/data/home_B.parquet",
+        "--model-size",
+        "small",
+        "--configs",
+        "baseline_fl",
+        "fs_mild",
+        "dp_sgd",
+        "--n-shadows",
+        "4"
+      ],
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/final_2_shadow.log",
+      "returncode": 0,
+      "elapsed_s": 40.00596035644412
+    },
+    {
+      "stage": "analysis",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "-m",
+        "fl_pipeline.analyze",
+        "--feature-set",
+        "baseline_16",
+        "--results-dir",
+        "/workspace/residential-experiment/runs/residential_cpu",
+        "--seeds",
+        "42",
+        "123",
+        "456",
+        "789",
+        "1024",
+        "--save-summary"
+      ],
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/final_3_analysis.log",
+      "returncode": 0,
+      "elapsed_s": 4.000669036991894
+    },
+    {
+      "stage": "analysis",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "-m",
+        "fl_pipeline.analyze",
+        "--feature-set",
+        "baseline_16",
+        "--results-dir",
+        "/workspace/residential-experiment/runs/residential_cpu",
+        "--seeds",
+        "42",
+        "123",
+        "456",
+        "789",
+        "1024",
+        "--save-summary",
+        "--equal-weight"
+      ],
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/final_4_analysis.log",
+      "returncode": 0,
+      "elapsed_s": 4.0005895076319575
+    },
+    {
+      "stage": "analysis",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "-m",
+        "fl_pipeline.analyze",
+        "--feature-set",
+        "baseline_16",
+        "--results-dir",
+        "/workspace/residential-experiment/runs/residential_cpu",
+        "--seeds",
+        "42",
+        "123",
+        "456",
+        "789",
+        "1024",
+        "--save-summary",
+        "--split",
+        "temporal"
+      ],
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/final_5_analysis.log",
+      "returncode": 0,
+      "elapsed_s": 4.001090656965971
+    },
+    {
+      "stage": "analysis",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "scripts/extract_paper_numbers.py",
+        "--feature-set",
+        "baseline_16",
+        "--results-dir",
+        "/workspace/residential-experiment/runs/residential_cpu",
+        "--seeds",
+        "42",
+        "123",
+        "456",
+        "789",
+        "1024",
+        "--model-size",
+        "small"
+      ],
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/final_6_analysis.log",
+      "returncode": 0,
+      "elapsed_s": 4.000695696100593
+    },
+    {
+      "stage": "figures",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "scripts/fig1_class_distribution.py",
+        "--feature-set",
+        "baseline_16",
+        "--results-dir",
+        "/workspace/residential-experiment/runs/residential_cpu",
+        "--seeds",
+        "42",
+        "123",
+        "456",
+        "789",
+        "1024",
+        "--model-size",
+        "small"
+      ],
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/final_7_figures.log",
+      "returncode": 0,
+      "elapsed_s": 5.000774502754211
+    },
+    {
+      "stage": "figures",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "scripts/fig2_paired_deltas.py",
+        "--feature-set",
+        "baseline_16",
+        "--results-dir",
+        "/workspace/residential-experiment/runs/residential_cpu",
+        "--seeds",
+        "42",
+        "123",
+        "456",
+        "789",
+        "1024",
+        "--model-size",
+        "small"
+      ],
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/final_8_figures.log",
+      "returncode": 0,
+      "elapsed_s": 5.000711704604328
+    },
+    {
+      "stage": "figures",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "scripts/fig3_convergence.py",
+        "--feature-set",
+        "baseline_16",
+        "--results-dir",
+        "/workspace/residential-experiment/runs/residential_cpu",
+        "--seeds",
+        "42",
+        "123",
+        "456",
+        "789",
+        "1024",
+        "--model-size",
+        "small"
+      ],
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/final_9_figures.log",
+      "returncode": 0,
+      "elapsed_s": 5.0006936006248
+    },
+    {
+      "stage": "temporal",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "scripts/temporal_split_check.py",
+        "--feature-set",
+        "baseline_16",
+        "--results-dir",
+        "/workspace/residential-experiment/runs/residential_cpu",
+        "--seeds",
+        "42",
+        "123",
+        "456",
+        "789",
+        "1024",
+        "--device",
+        "cpu",
+        "--num-threads",
+        "1",
+        "--rounds",
+        "20",
+        "--local-epochs",
+        "5",
+        "--batch-size",
+        "256",
+        "--home-a",
+        "/workspace/residential-experiment/data/home_A.parquet",
+        "--home-b",
+        "/workspace/residential-experiment/data/home_B.parquet",
+        "--model-size",
+        "medium"
+      ],
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/final_10_temporal.log",
+      "returncode": 0,
+      "elapsed_s": 33.00426407903433
+    },
+    {
+      "stage": "mia",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "-m",
+        "fl_pipeline.run_mia",
+        "--feature-set",
+        "baseline_16",
+        "--results-dir",
+        "/workspace/residential-experiment/runs/residential_cpu",
+        "--seeds",
+        "42",
+        "123",
+        "456",
+        "789",
+        "1024",
+        "--device",
+        "cpu",
+        "--num-threads",
+        "1",
+        "--rounds",
+        "20",
+        "--local-epochs",
+        "5",
+        "--batch-size",
+        "256",
+        "--home-a",
+        "/workspace/residential-experiment/data/home_A.parquet",
+        "--home-b",
+        "/workspace/residential-experiment/data/home_B.parquet",
+        "--model-size",
+        "medium",
+        "--configs",
+        "baseline_fl",
+        "fs_mild",
+        "dp_sgd"
+      ],
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/final_11_mia.log",
+      "returncode": 0,
+      "elapsed_s": 41.0049410155043
+    },
+    {
+      "stage": "shadow",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "-m",
+        "fl_pipeline.run_shadow_mia",
+        "--feature-set",
+        "baseline_16",
+        "--results-dir",
+        "/workspace/residential-experiment/runs/residential_cpu",
+        "--seeds",
+        "42",
+        "123",
+        "456",
+        "789",
+        "1024",
+        "--device",
+        "cpu",
+        "--num-threads",
+        "1",
+        "--rounds",
+        "20",
+        "--local-epochs",
+        "5",
+        "--batch-size",
+        "256",
+        "--home-a",
+        "/workspace/residential-experiment/data/home_A.parquet",
+        "--home-b",
+        "/workspace/residential-experiment/data/home_B.parquet",
+        "--model-size",
+        "medium",
+        "--configs",
+        "baseline_fl",
+        "fs_mild",
+        "dp_sgd",
+        "--n-shadows",
+        "4"
+      ],
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/final_12_shadow.log",
+      "returncode": 0,
+      "elapsed_s": 39.005196841433644
+    },
+    {
+      "stage": "analysis",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "-m",
+        "fl_pipeline.analyze",
+        "--feature-set",
+        "baseline_16_medium",
+        "--results-dir",
+        "/workspace/residential-experiment/runs/residential_cpu",
+        "--seeds",
+        "42",
+        "123",
+        "456",
+        "789",
+        "1024",
+        "--save-summary"
+      ],
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/final_13_analysis.log",
+      "returncode": 0,
+      "elapsed_s": 4.000709152780473
+    },
+    {
+      "stage": "analysis",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "-m",
+        "fl_pipeline.analyze",
+        "--feature-set",
+        "baseline_16_medium",
+        "--results-dir",
+        "/workspace/residential-experiment/runs/residential_cpu",
+        "--seeds",
+        "42",
+        "123",
+        "456",
+        "789",
+        "1024",
+        "--save-summary",
+        "--split",
+        "temporal"
+      ],
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/final_14_analysis.log",
+      "returncode": 0,
+      "elapsed_s": 4.000550108961761
+    },
+    {
+      "stage": "analysis",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "scripts/extract_paper_numbers.py",
+        "--feature-set",
+        "baseline_16",
+        "--results-dir",
+        "/workspace/residential-experiment/runs/residential_cpu",
+        "--seeds",
+        "42",
+        "123",
+        "456",
+        "789",
+        "1024",
+        "--model-size",
+        "medium"
+      ],
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/final_15_analysis.log",
+      "returncode": 0,
+      "elapsed_s": 4.000571231357753
+    },
+    {
+      "stage": "figures",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "scripts/fig1_class_distribution.py",
+        "--feature-set",
+        "baseline_16",
+        "--results-dir",
+        "/workspace/residential-experiment/runs/residential_cpu",
+        "--seeds",
+        "42",
+        "123",
+        "456",
+        "789",
+        "1024",
+        "--model-size",
+        "medium"
+      ],
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/final_16_figures.log",
+      "returncode": 0,
+      "elapsed_s": 5.000813196413219
+    },
+    {
+      "stage": "figures",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "scripts/fig2_paired_deltas.py",
+        "--feature-set",
+        "baseline_16",
+        "--results-dir",
+        "/workspace/residential-experiment/runs/residential_cpu",
+        "--seeds",
+        "42",
+        "123",
+        "456",
+        "789",
+        "1024",
+        "--model-size",
+        "medium"
+      ],
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/final_17_figures.log",
+      "returncode": 0,
+      "elapsed_s": 5.000814580358565
+    },
+    {
+      "stage": "figures",
+      "argv": [
+        "/opt/residential-venv/bin/python",
+        "scripts/fig3_convergence.py",
+        "--feature-set",
+        "baseline_16",
+        "--results-dir",
+        "/workspace/residential-experiment/runs/residential_cpu",
+        "--seeds",
+        "42",
+        "123",
+        "456",
+        "789",
+        "1024",
+        "--model-size",
+        "medium"
+      ],
+      "log": "/workspace/residential-experiment/runs/residential_cpu/parallel_1789458805184665777/final_18_figures.log",
+      "returncode": 0,
+      "elapsed_s": 5.000670925714076
+    }
+  ],
+  "elapsed_s": 33616.35152494814,
+  "completed_jobs": 145,
+  "running_jobs": 0,
+  "pending_jobs": 0
+}

@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-09-15T17:54:20.100549+00:00",
+  "purpose": "Isolated small-model runtime measurement",
+  "timing_context": "One experiment process; configurations sequential; both homes simulated sequentially on a shared host",
+  "source_sha256": "a4dcb4db7051d9a52d4e0ffb35ee9a312ff2005075f045a826f7bb939c5bd0b0",
+  "data_sha256": {
+    "home_a": "e34b01a1ac786e8decda51336c81d8163ace4cf5fbe01deea5612b727f510bcb",
+    "home_b": "b46b21c1d6b7b34ffd2028bff174f130940e09e35dd1c84ede8cdc4574698a43"
+  },
+  "seed": 42,
+  "configs": [
+    "baseline_fl",
+    "fs_mild",
+    "fs_aggressive",
+    "dp_sgd",
+    "feddpa"
+  ],
+  "rounds": 20,
+  "local_epochs": 5,
+  "batch_size": 256,
+  "hidden_dims": [
+    16,
+    16
+  ],
+  "device": "cpu",
+  "num_threads": 1,
+  "split": "stratified",
+  "aggregation": "size_proportional",
+  "runtime_limit_hours": 6,
+  "cpu_model": "AMD EPYC 7702 64-Core Processor",
+  "python": "3.11.14",
+  "launcher_sha256": "c26da755d52504251822fb102ecad6d667916d3e55f7656085433eb58a430752",
+  "full_run_reference": "runs/residential_cpu",
+  "usage": "Timing only; retain full-run utility and attack measurements"
+}
